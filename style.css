@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+    background-color: #fff;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color:#2b2b2b;
+}
+
+ol{
+    margin: 0;
+    
+}
+
+.header-nave-desktop{
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    border-bottom: 1px solid #e7eaed;
+    z-index: 100;
+}
+
+.nav-container{
+    margin: 0 auto;
+    max-width: 1022px;
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: hsla(0, 0%, 100%, .8);
+    min-height: 82px;
+    padding: 16px;
+    width:100%;
+}
+
+.nave-logo{
+    margin: 0 20px 0 0;
+    height: 100%;
+    max-height: 37px;
+    max-width: 100%;
+    width: auto;
+}
+
+.header-menu{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.header-menu::after{
+    background-color: #bebebe;
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+
+.header-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 24px;
+    border-radius: 50px;
+    margin: 0 4px;
+    min-height: 41px;
+    line-height: 24px;
+    font-size:14px;
+    font-weight: 700;
+}
+
+
+
+.header-buttons{
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: end;
+    gap: 2px;
+    margin-left: auto;
+    list-style: none;
+}
+
+.buttons-h{
+    min-width: 160px;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing:0.39998px;
+    cursor: pointer;
+    background-color: #652bdf;;
+    color: #fff;
+    transition: all .4s ease-in-out 0s;
+}
+
+
+.buttons-h.secondary{
+    background-color: transparent;
+    border: 1px solid #652bdf;
+    color: #652bdf;
+}
+
+.header-item--hover:hover{
+    background-color:#e4d7ff;
+    color:#360c72;
+}
+
+.buttons-h.secondary:hover{
+    background-color:#e4d7ff;
+    border: 1px solid #360c72;
+    color: #360c72;
+    transition: all .4s ease-in-out 0s;
+}
+
+.buttons-h.primary{
+    border: 1px solid;
+}
+
+.header-nave-mobile{
+        display: none;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #fff;
+        border-bottom: 1px solid #e7eaed;
+    }
+
+.nav-mobile{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 72px;
+    position: relative;
+}
+
+.nav-mobile-menu{
+    position: absolute;
+    left: 24px;
+}
+
+@media screen and (max-width:991px){
+    .header-nave-desktop{
+        display: none;
+    }
+
+    .header-nave-mobile{
+        display: block;
+    }
+    
+}
