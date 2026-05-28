@@ -7,7 +7,7 @@
 }
 body{
     height: 200vh;
-    background-color: #fff;
+    background-color: #FCFBFF ;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     color:#2b2b2b;
 }
@@ -157,5 +157,101 @@ ol{
     .header-nave-mobile{
         display: block;
     }
+}
+
+.welcome-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
     
+}
+
+.welcome-title{
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -1.8px;
+}
+
+.welcome-content{
+    display: flex;
+    flex-direction:column;
+    max-width: 1022px;
+}
+
+.welcome-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.welcome-card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    padding: 19px;
+    border-radius: 8px;
+    background-color:#f0eafc;
+    font-size: 24px;
+}
+
+.bxstyle{
+    color:#652bdf  
+}
+
+.welcome-card{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    min-height: 184px;
+    width: 100%;
+    gap: 16px;
+    border-radius: 16px;
+    padding: 24px;
+    background: #fff;
+    transition: transform .3s ease-out;
+}
+
+.welcome-card:hover{
+    transform: translateY(-5px);
+}
+
+.welcome-subtitle{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.08px;
+    line-height: 26px;
+    min-height: 28px;
+    
+}
+
+.welcome-p{
+    font-size:18px;
+    font-weight:400;
+    line-height: 1.5;
+    min-height: 28px;
+    color: #6A6A6A;
+}
+
+@media screen and (max-width:767px){
+    .welcome-cards{
+        flex-direction: column;
+    }
+}
+
+.payment-content{
+    display: flex;
+    justify-content: center;
+}
+
+.payment-cards{
+    flex-direction: row;
+    width:100%;
 }
