@@ -21,9 +21,6 @@ h1 {
     letter-spacing: -1.8px;
 }
 
-ol {
-    margin: 0;
-}
 
 .header-nave-desktop {
     position: sticky;
@@ -61,6 +58,7 @@ ol {
     flex-basis: auto;
     flex-wrap: nowrap;
     position: relative;
+    list-style: none;
 }
 
 .header-menu::after {
@@ -468,6 +466,7 @@ ol {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    list-style: none;
 }
 
 .sitemap-li {
