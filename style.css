@@ -8,6 +8,7 @@
 
 body {
     height: 100%;
+    margin: 0 auto;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     background-color: #FCFBFF;
     color: #2b2b2b;
@@ -153,6 +154,12 @@ ol {
     left: 24px;
 }
 
+@media screen and (max-width:1200px){
+    section{
+        padding: 0 20px 0 20px;
+    }
+}
+
 @media screen and (max-width:991px) {
     .header-nave-desktop {
         display: none;
@@ -160,6 +167,22 @@ ol {
 
     .header-nave-mobile {
         display: block;
+    }
+
+    h1{
+        font-size:30px;
+        letter-spacing:-1.35px;
+        line-height:36px;
+    }
+
+    h2{
+        font-size: 20px;
+        letter-spacing: -0.9px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -185,7 +208,6 @@ ol {
 .welcome-cards {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
     gap: 16px;
 }
 
@@ -202,7 +224,7 @@ ol {
 }
 
 .bxstyle {
-    color: #652bdf
+    color: #652bdf;
 }
 
 .welcome-card {
@@ -224,6 +246,10 @@ ol {
     transform: translateY(-5px);
 }
 
+.welcome-card:hover .bxstyle{
+    color: #360c72;
+}
+
 .welcome-subtitle {
     min-height: 28px;
     font-size: 24px;
@@ -239,6 +265,18 @@ ol {
     font-weight: 400;
     line-height: 1.5;
     color: #6A6A6A;
+}
+
+@media screen and (max-width:991px){
+    .welcome-subtitle{
+        font-size:20px;
+        letter-spacing: -0.9px;
+    }
+    
+    .welcome-p{
+        font-size:16px;
+        line-height:24px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -368,12 +406,6 @@ ol {
 }
 
 @media screen and (max-width:767px) {
-
-    .payments-section {
-        padding: 0 20px 0 20px;
-
-    }
-
     .payment-card {
         flex-direction: column-reverse;
     }
@@ -428,11 +460,11 @@ ol {
     justify-content: flex-start;
 }
 
-.sitemap-ol {
+.sitemap-ul {
     width: 100%;
 }
 
-.sitemap-ol-title {
+.sitemap-ul-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
